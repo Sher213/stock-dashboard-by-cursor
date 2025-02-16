@@ -1,2 +1,6 @@
 yfinance
 plotly
+pandas
+plotly
+prophet
+openai
