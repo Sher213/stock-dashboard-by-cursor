@@ -170,7 +170,9 @@ def main():
             st.session_state.chat_history.append(("AI", response))
             
             # Clear the input field after submission
-            st.session_state.query_input = ""
+            if "query_input" not in st.session_state:
+                st.session_state.query_input = ""
+            
             st.rerun()
         
         # Display chat history
